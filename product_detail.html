@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCTS | Kabellab</title>
+
+    <!-- add icon link-->
+        <link rel="icon" href="./img/KabellabLogoBtn.png" sizes="32x32" type="image/x-icon">
+
+  <!-- Bootstrap and CSS -->
+  <!--Link for connecting to bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Boxicons CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!--Link to connect to font awesome-->
+  <!--Link to connect to CSS-->
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="./css/headers.css">
+
+</head>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.125em 0.5em #00000026;
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+      
+   
+      <nav class="py-2 bg-body-tertiary border-bottom">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link link-body-emphasis px-2 active"
+                aria-current="page"
+                ></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2"></a>
+            </li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">lorem</a>
+            </li>
+             <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">|</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">lorem</a>
+            </li>
+             <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">|</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">lorem</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none" style="font-size:x-large; font-weight: bolder;"
+          >
+      <img src="./img/Logo - Kabellab (R)-Original-2022-01.png" alt="Bootstrap" width="300px" height="auto">
+    
+          </a>
+             <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto align-items-center">
+  <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none" href="#" style="font-size: small;" hidden>HOME</a>
+
+  <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none" href="#" style="font-size: small;" hidden>SOLUTIONS</a>
+
+ <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none active"
+     href="index.html"
+     style="font-size: small;">
+     PRODUCTS
+  </a>
+
+  <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none" href="#" style="font-size: small;" hidden>RESOURCES</a>
+
+  <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none" href="#" style="font-size: small;" hidden>SUPPORT CENTER</a>
+
+  <!-- COLLAPSE BUTTON -->
+  <a class="btn-sm ms-2" data-bs-toggle="collapse" href="" role="button" style="color: black;">
+    <i class='bx  bx-search'    ></i> 
+  </a>
+</nav>
+        </div>
+      </header>
+    </main>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <nav aria-label="breadcrumb" class="mb-3">
+  <ol class="breadcrumb" id="breadcrumb"></ol>
+</nav>
+
+    </div>
+     <div class="col-sm-4">
+      
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search Product or Keyword" aria-label="Search"/>
+      <button class="btn btn-outline-primary" type="submit" id="btnstyle" >Go</button>
+    </form>
+     </div>
+  </div>
+</div>
+
+<br>
+
+
+
+<div class="container">
+  <h3 style="font-weight: normal; color: #1C2125;">PRODUCT TITLE DESCRIPTION</h3>
+  <hr>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-7">
+
+      <br>
+      <!-- Main Image Display -->
+      <div class="main-display" id="mainDisplay">
+        <img id="mainImage" src="" alt="Preview" />
+      </div>
+
+      <br><br>
+
+      <!-- Thumbnails -->
+      <div class="thumbnails" id="thumbnailContainer"></div>
+
+    </div>
+
+    <div class="col-sm-5" style="padding-top: 40px;">
+      <h4 id="detailText" style="font-weight: bold;"></h4>
+<br>
+      <p>
+        Kabellab products are meticulously designed for easy installation while maintaining the highest quality with an aesthetically pleasing design.
+        <br><br>
+Kabellab combines innovative design with technology to create efficient products that achieve maximum impact. These are Kabellab's guiding principles.
+ <br><br>
+Scroll below to learn more.
+      </up>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="container mt-4">
+  <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs" id="cardTabs">
+        <!-- Tabs generated dynamically -->
+      </ul>
+    </div>
+ <div class="card-body fade show text-start" id="cardBody"></div>
+
+  </div>
+</div>
+
+<style>
+  /* Fade effect */
+  .fade {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .fade.show {
+    opacity: 1;
+  }
+  /* Optional styling */
+  .nav-link {
+    cursor: pointer;
+  }
+</style>
+
+<script>
+ 
+ const breadcrumbEl = document.getElementById("breadcrumb");
+const crumb = JSON.parse(localStorage.getItem("breadcrumb"));
+
+breadcrumbEl.innerHTML = `
+  <li class="breadcrumb-item">
+    <a href="index.html">Products</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="product.html">${crumb.level2}</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    ${crumb.level3}
+  </li>
+`;
+ 
+
+// ---------------------
+// LOAD SELECTED PRODUCT
+// ---------------------
+
+
+const selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
+
+if (selectedProduct) {
+    // Main info
+   document.querySelector("h3").textContent =
+    selectedProduct.title || "Product Detail";
+    document.getElementById("detailText").textContent = selectedProduct.name;
+
+    // If product has no images array, create one using main image
+    if (!selectedProduct.images || selectedProduct.images.length === 0) {
+        selectedProduct.images = [selectedProduct.img];
+    }
+
+    // Generate thumbnails dynamically
+    const thumbnailContainer = document.getElementById("thumbnailContainer");
+    thumbnailContainer.innerHTML = "";
+
+    selectedProduct.images.forEach(imgSrc => {
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("thumbnail-wrapper");
+
+        wrapper.innerHTML = `
+            <img src="${imgSrc}" data-bg="${imgSrc}">
+        `;
+
+        thumbnailContainer.appendChild(wrapper);
+    });
+}
+
+// ---------------------
+// IMAGE SWITCHER LOGIC
+// ---------------------
+const mainImage = document.getElementById('mainImage');
+
+let thumbnailWrappers = [];
+
+function initThumbnails() {
+    thumbnailWrappers = document.querySelectorAll('#thumbnailContainer .thumbnail-wrapper');
+
+    thumbnailWrappers.forEach((wrapper, index) => {
+        const img = wrapper.querySelector('img');
+
+        img.addEventListener('pointerdown', () => {
+            updateDisplay(index);
+        });
+    });
+
+    updateDisplay(0); // show first image by default
+}
+
+function updateDisplay(index) {
+    const selectedWrapper = thumbnailWrappers[index];
+    const selectedImg = selectedWrapper.querySelector('img');
+
+    if (!selectedImg) return;
+
+    // Update main image
+    mainImage.src = selectedImg.dataset.bg || '';
+    mainImage.alt = selectedImg.alt || 'Preview';
+
+    // Remove active class from all thumbnails
+    thumbnailWrappers.forEach(wrapper => {
+        wrapper.querySelector('img').classList.remove('active');
+    });
+
+    // Highlight selected thumbnail
+    selectedImg.classList.add('active');
+}
+
+// Initialize after DOM updates
+setTimeout(initThumbnails, 50);
+
+
+ // -----------------------------
+  // TAB DATA
+  // -----------------------------
+const tabData = [
+  {
+    tabLabel: "Product Description",
+     icon: "bi-file-text",
+    title: "",
+    text: selectedProduct?.description || "<p>No description available.</p>"
+  },
+  {
+    tabLabel: "Product Features",
+    icon: "bi-list-check",
+    title: "",
+    text: selectedProduct?.features || "<p>No features listed.</p>"
+  },
+  {
+    tabLabel: "Data Sheet",
+    icon: "bi-file-earmark-pdf",
+    title: "",
+    text: selectedProduct?.datasheet || "<p>No data sheet available.</p>"
+  }
+];
+
+  const cardTabs = document.getElementById('cardTabs');
+  const cardBody = document.getElementById('cardBody');
+
+  // -----------------------------
+  // GENERATE TABS
+  // -----------------------------
+ tabData.forEach((tab, index) => {
+  const li = document.createElement('li');
+  li.className = "nav-item";
+
+  const a = document.createElement('a');
+  a.className = "nav-link" + (index === 0 ? " active" : "");
+  a.href = "#";
+  a.dataset.index = index;
+  a.innerHTML = `<i class="bi ${tab.icon} me-2"></i>${tab.tabLabel}`;
+
+  li.appendChild(a);
+  cardTabs.appendChild(li);
+});
+
+
+  // -----------------------------
+  // SHOW CONTENT WITH FADE
+  // -----------------------------
+  function showContent(index) {
+    // fade out
+    cardBody.classList.remove('show');
+
+    setTimeout(() => {
+      const tab = tabData[index];
+
+      // update content
+      cardBody.innerHTML = `
+        <h5 class="card-title">${tab.title}</h5>
+        <div class="card-text">${tab.text}</div>
+      `;
+
+      // fade in
+      cardBody.classList.add('fade', 'show');
+    }, 200); // match with CSS transition
+  }
+
+  // -----------------------------
+  // INITIAL CONTENT
+  // -----------------------------
+  showContent(0);
+
+  // -----------------------------
+  // TAB CLICK EVENT
+  // -----------------------------
+  const tabs = cardTabs.querySelectorAll('.nav-link');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', e => {
+      e.preventDefault();
+      // set active tab
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // show content
+      showContent(tab.dataset.index);
+    });
+  });
+
+
+
+</script>
+
+
+
+
+<br><br><br>
+
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+ 
+
+  <!-- Section: Links  -->
+  <section id="footer" class="" style="padding-top: 6px; background-color: #343a3f;">
+
+
+      <section class="d-flex justify-content-center justify-content-lg-between p-2" style="background-color: #343a3f; margin-top: 10px;">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>For product inquiries, please email to <span style="color: #F1592A;">info@kabellab.com</span></span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+ 
+    <!-- Right -->
+  </section>
+<hr>
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+               <img src="./img/KabellabLogoBtn.png" width="20px"> KABELLAB
+          </h6>
+        <p style="font-size: small;">
+           Kabellab was established in 2009 by Brian who owns all the Kabellab products development and design. Kabellab has appointed agents/partners in a few countries, which are Brunei Darussalam, Malaysia, Taiwan & China.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+           Research & Design
+          </h6>
+          <p style="font-size: smaller;">
+           Spg 845-10-43, Block C
+
+No.22, Kg Jangsak,
+
+Bandar Seri Begawan BF2720
+
+Brunei Darussalam
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            SEA Sales & Marketing
+          </h6>
+          <p style="font-size: smaller;">
+           The Square @ One City
+T1-09-04, Jln USJ 25/1
+47650 Subang Jaya
+Selangor Darul Ehsan.
+Malaysia.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Manufacturing & Production
+          </h6>
+          <p style="font-size: smaller;">
+            A Building, XinFa Industry Zone
+BiYuan Road Fenggang Town
+Dongguang
+Guangdong Province
+China
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div id="footer" class="text-left p-4" style="background-color: #1C2125;">
+        © 2025 Kabellab | Simple & Nice. All rights reserved.
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+    <script
+      src="../assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+</body>
+</html>

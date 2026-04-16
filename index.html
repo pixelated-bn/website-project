@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCTS | Kabellab</title>
+
+   <!-- add icon link-->
+        <link rel="icon" href="./img/KabellabLogoBtn.png" sizes="32x32" type="image/x-icon">
+ 
+  <!-- Bootstrap and CSS -->
+  <!--Link for connecting to bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Boxicons CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!--Link to connect to font awesome-->
+  <!--Link to connect to CSS-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="./css/headers.css">
+
+</head>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.125em 0.5em #00000026;
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+      
+   
+      <nav class="py-2 bg-body-tertiary border-bottom">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link link-body-emphasis px-2 active"
+                aria-current="page"
+                ></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2"></a>
+            </li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">lorem</a>
+            </li>
+             <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">|</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">lorem</a>
+            </li>
+             <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">|</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-body-emphasis px-2" style="font-size: smaller;">lorem</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none" style="font-size:x-large; font-weight: bolder;"
+          >
+      <img src="./img/Logo - Kabellab (R)-Original-2022-01.png" alt="Bootstrap" width="300px" height="auto">
+    
+          </a>
+       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto align-items-center">
+  <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none" href="#" style="font-size: small;" hidden>HOME</a>
+
+  <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none" href="#" style="font-size: small;" hidden>SOLUTIONS</a>
+
+ <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none active"
+     href="index.html"
+     style="font-size: small;">
+     PRODUCTS
+  </a>
+
+  <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none" href="#" style="font-size: small;" hidden>RESOURCES</a>
+
+  <a class="navhover me-3 py-2 link-body-emphasis text-decoration-none" href="#" style="font-size: small;" hidden>SUPPORT CENTER</a>
+
+  <!-- COLLAPSE BUTTON -->
+  <a class="btn-sm ms-2" data-bs-toggle="collapse" href="" role="button" style="color: black;">
+    <i class='bx  bx-search'    ></i> 
+  </a>
+</nav>
+
+<!-- COLLAPSE CONTENT (outside nav) -->
+<div class="collapse mt-2" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component.
+  </div>
+</div>
+
+        </div>
+      </header>
+    </main>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <nav aria-label="breadcrumb" class="mb-3">
+  <ol class="breadcrumb" id="breadcrumb"></ol>
+</nav>
+
+    </div>
+     <div class="col-sm-4">
+      
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search Product or Keyword" aria-label="Search"/>
+      <button class="btn btn-outline-primary" id="btnstyle" type="submit">Go</button>
+    </form>
+     </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center">
+    <h1 class="mb-0" style="font-weight: lighter; color: #1C2125;">Product Categories</h1>
+    <div class="d-grid gap-2 d-md-block">
+      <button class="btn btn-outline-primary" type="button" id="btnstyle" >New Products</button>
+      <button class="btn btn-outline-primary" type="button" id="btnstyle" >Discontinued Products</button>
+        <button class="btn btn-outline-primary" type="button" id="btnstyle" >Top FAQs</button>
+    </div>
+  </div>
+  <hr>
+</div>
+
+
+<div class="container mt-4">
+  <div class="row">
+    <!-- LEFT CATEGORY LIST -->
+    <div class="col-sm-3">
+      <div class="p-3" style="background-color: none;">
+        <h5 class="mb-3" style="font-weight: lighter;">Select a Category<i class='arrow2 bx  bx-chevron-down'></i></h5>
+        <ul class="list-group no-boxes" id="categoryList"></ul>
+
+      </div>
+      <hr>
+    </div>
+
+    <!-- RIGHT CARD CONTENT -->
+    <div class="col-sm-9">
+      <div id="cardContainer" class="row row-cols-1 row-cols-md-3 g-3"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 🗂️ Example Data (you can later load this from MongoDB, API, etc.)
+
+  const data = [
+    {
+      name: "LabActiv",
+      count: 10,
+      products: [
+        { title: "LabActiv-IoT", text: "Kabellab products are meticulously designed for easy installation while maintaining the highest quality with an aesthetically pleasing design and combining innovative design with technology to create efficient products that achieve maximum impact.", img: "./img/(LabActiv) Active Equipment/LabActiv-IoT/EM500/EM500.PAR.png" },
+        { title: "LabActiv-MS2", text: "LabActiv-MS2 is a media converter designed by Kabellab for commercial use. The media converter is compact and versatile with easy installation.", img: "./img/(LabActiv) Active Equipment/LabActiv-MS2/0G4A0676.png" },
+        { title: "LabActiv-REVO 1", text: "LabActiv-REVO 1 is a DIN rail-type media converter that makes the conversion of an Ethernet copper segment to fiber simple to use.", img: "./img/(LabActiv) Active Equipment/LabActiv-REVO 1/0G4A0742.png" },
+        { title: "LabActiv-REVO 1 (H)", text: "LabActiv-REVO 1(H) is a DIN rail type media converter that supports external SFP Modules and meets EN55022 standard.", img: "./img/(LabActiv) Active Equipment/LabActiv-REVO 1 (H)/0G4A0733.png" },
+        { title: "LabActiv-REVO 2", text: "LabActiv-REVO 2 is a DIN rail-type media converter that makes the conversion of an Ethernet copper segment to fiber simple to use.", img: "./img/(LabActiv) Active Equipment/LabActiv-REVO 2/0G4A2916.png" },
+        { title: "LabActiv-REVO 4", text: "LabActiv-REVO 4 is a new generation Industrial Managed Switch equipped with 4-Port 10/100/1000Base-T 802.3at PoE+ and....", img: "./img/(LabActiv) Active Equipment/LabActiv-REVO 4/0G4A0731.png" },
+        { title: "LabActiv-REVO 8", text: "LabActiv-REVO 8 is a new generation Industrial Managed Switch equipped with 8-Port 10/100/1000Base-T 802.3at PoE+....", img: "./img/(LabActiv) Active Equipment/LabActiv-REVO 8/0G4A0730.png" },
+        { title: "LabActiv-REVO 8F", text: "LabActiv-REVO 8F is our new generation management type industrial Ethernet switch series of products.", img: "./img/(LabActiv) Active Equipment/LabActiv-REVO 8F/0G4A0727.png" },
+        { title: "LabActiv-REVO 16", text: "LabActiv-REVO 16 is a new generation Industrial Managed Switch equipped with 16-Port 10/100/1000Base-T 802.3at....", img: "./img/(LabActiv) Active Equipment/LabActiv-REVO 16/0G4A0728.png" },
+        { title: "LabActiv-SFP 10G Copper", text: "LabActiv-SFP 10G Copper SFP Transceiver is Copper Small Form pluggable (SFP) transceiver is based on SFP multi-sourcing agreement (MSA).", img: "./img/(LabActiv) Active Equipment/LabActiv-SFP 10G Copper/LabActiv-SFP-10G-Copper-1.png" }
+      ]
+    },
+    {
+      name: "LabFrame",
+      count: 7,
+      products: [
+        { title: "LabFrame-948 (DC Containment)", text: "The separation of cold supply air from the hot exhaust air from IT equipment.", img: "./img/(LabFrame) Racks/LabFrame-948 (DC Containment)/NER2-45-ISO.png" },
+        { title: "LabFrame-NER2 (Server Rack 42U)", text: "Compatible with almost all server manufacturer’s equipment.", img: "./img/(LabFrame) Racks/LabFrame-NER2 (Server Rack 42U)/NER2--45.png" },
+        { title: "LabFrame-Open Q15 (Open Rack 15U)", text: "LabFrame-Open Q15 is a network management open rack optimized for easy installation and cable management.", img: "./img/(LabFrame) Racks/LabFrame-Open Q15 (Open Rack 15U)/Q15-45.png" },
+        { title: "LabFrame-Open Q24 (Open Rack 24U)", text: "LabFrame-Open Q24 is a network management open rack optimized for easy installation and cable management.", img: "./img/(LabFrame) Racks/LabFrame-Open Q24 (Open Rack 24U)/Q24-45.png" },
+        { title: "LabFrame-Open Q36 (Open Rack 36U)", text: "LabFrame-Open Q36 is a network management open rack optimized for easy installation and cable management.", img: "./img/(LabFrame) Racks/LabFrame-Open Q36 (Open Rack 36U)/Q36-45.png" },
+        { title: "LabFrame-Open Q42 (Open Rack 42U)", text: "LabFrame-Open Q42 is a network management open rack optimized for easy installation and cable management.", img: "./img/(LabFrame) Racks/LabFrame-Open Q42 (Open Rack 42U)/Q42-45.png" },
+        { title: "LabFrame-Open Q42E (Open Rack 42U Ex)", text: "LabFrame-Open Q42E is a network management open rack optimized for easy installation and cable management.", img: "./img/(LabFrame) Racks/LabFrame-Open Q42E (Open Rack 42U Ex)/006.png" },
+      ]
+    },
+    {
+      name: "LabClean",
+      count: 1,
+      products: [
+        { title: "(LabClean) Cleaning Products", text: "Kabellab products are meticulously designed for easy installation while maintaining the highest quality with an aesthetically pleasing design and combining innovative design with technology to create efficient products that achieve maximum impact.", img: "./img/(LabClean) Cleaning Products/17.png" }
+      ]
+    },
+    {
+      name: "LabGuide",
+      count: 4,
+      products: [
+        { title: "LabGuide (1U Cable Management)", text: "The horizontal cable managers are specifically designed to provide comprehensive cable management solutions for both the front and rear of any standard 19” rack.", img: "./img/(LabGuide) Cable Management/LabGuide (1U Cable Management)/LabGuide (1U Cable Management) (2).png" },
+         { title: "LabGuide-1U Box", text: "1U Improving Cable Management Efficiency. These versatile cable management solutions have been specifically designed to seamlessly integrate with EIA 19” racks....", img: "./img/(LabGuide) Cable Management/LabGuide-1U Box/LabGuide-1U Box Images (1).png" },
+          { title: "LabGuide-2U Box", text: "2U Improving Cable Management Efficiency. These versatile cable management solutions have been specifically designed to seamlessly integrate with EIA 19” racks....", img: "./img/(LabGuide) Cable Management/LabGuide-2U Box/LabGuide-2U Box Images (1).png" },
+           { title: "LabGuide-2U", text: "2U Enhancing Cable Management Efficiency. The horizontal cable managers are specifically designed to provide comprehensive cable management solutions for both the front and rear of any standard 19” rack.", img: "./img/(LabGuide) Cable Management/LabGuide-2U/LabGuide-2U Images (1).png" },
+      ]
+    },
+    {
+      name: "LabOSP",
+      count: 9,
+      products: [
+        { title: "Accessory", text: "Kabellab products are meticulously designed for easy installation while maintaining the highest quality with an aesthetically pleasing design.", img: "./img/(LabOSP) OutSide Plant/Accessory/accessory (10).png" },
+        { title: "Cable Joint Box 0", text: "LabOSP Cable Joint Box manhole system is designed for underground network access, especially for fiber optical and electricity industries.", img: "./img/(LabOSP) OutSide Plant/Cable Joint Box 0/Joint-Box-0-45.png" },
+        { title: "Cable Joint Box 1", text: "LabOSP Cable Joint Box manhole system is designed for underground network access, especially for fiber optical and electricity industries.", img: "./img/(LabOSP) OutSide Plant/Cable Joint Box 1/Joint-Box-1-45.png" },
+        { title: "Cable Joint Box 2", text: "LabOSP Cable Joint Box manhole system is designed for underground network access, especially for fiber optical and electricity industries.", img: "./img/(LabOSP) OutSide Plant/Cable Joint Box 2/Joint-Box-2-45-Left.png" },
+        { title: "CJB 1 Cover", text: "CJB1 Composite Manhole Cover conforms to BS EN124 D400 Class and is suitable for carriageways of roads (including pedes-trian streets)....", img: "./img/(LabOSP) OutSide Plant/CJB 1 Cover/With Hinge/whinge (1).png" },
+        { title: "FJB 0 Cover", text: "FJB0 Composite Manhole Cover Options to BS EN124 B125 and EN124 C250.", img: "./img/(LabOSP) OutSide Plant/FJB 0 Cover/B125/B125 (2).png" },
+        { title: "FJB 3 Cover", text: "FJB3 Composite Manhole Cover Options to BS EN124 B125 and EN124 C250.", img: "./img/(LabOSP) OutSide Plant/FJB 3 Cover/B125/FJB3(B125) (1).png" },
+        { title: "FJB 4 Cover", text: "FJB4 Composite Manhole Cover Options to BS EN124 B125 and EN124 C250.", img: "./img/(LabOSP) OutSide Plant/FJB 4 Cover/B125/FJB4(B125) (2).png" }
+      ]
+    },
+    {
+      name: "LabPanel",
+      count: 4,
+      products: [
+        { title: "LabPanel - Imaginatus III (1U Fiber Patch Panel)", text: "It is usually a metal enclosure that houses adapter panels, fiber splicing trays and space for excess fiber storage.", img: "./img/(LabPanel) Patch Panel & Box/LabPanel - Imaginatus III (1U Fiber Patch Panel)/0G4A8784.png" },
+        { title: "LabPanel-Angle (Copper Patch Panel)", text: "LabPanel | Copper is designed with a Modular snap-on concept for easy labelling and maintenance. Modular snap-on features allow each port to be removable.", img: "./img/(LabPanel) Patch Panel & Box/LabPanel-Angle (Copper Patch Panel)/0G4A0871.png" },
+        { title: "LabPanel-FTB Images (FTTH Termination)", text: "FTTB Termination Box is used as a termination point for the feeder cable to connect with drop cable in FTTx communication network system.", img: "./img/(LabPanel) Patch Panel & Box/LabPanel-FTB Images (FTTH Termination)/0G4A0357.png" },
+        { title: "LabPanel-S (Copper Patch Panel)", text: "LabPanel | Copper is designed with a Modular snap-on concept for easy labelling and maintenance. Modular snap-on features allow each port to be removable.", img: "./img/(LabPanel) Patch Panel & Box/LabPanel-S (Copper Patch Panel)/0G4A1054.png" },
+      ]
+    },
+    {
+      name: "LabPatch",
+      count: 2,
+      products: [
+        { title: "LabPatch Copper Patch Cord", text: "These patch cords are made from low-profile, anti-snag boots for high-density applications and meet the standard requirements of TIA/EIA-568C & ISO 11801:2002.", img: "./img/(LabPatch) Patch Cord/LabPatch Copper Patch Cord/LabPatch-6 (Cat6 Patch Cord)/0G4A8471.png" },
+        { title: "LabPatch Fiber Optic Patch Cord", text: "These patch cords are made from low-profile, anti-snag boots for high-density applications and meet the standard requirements of TIA/EIA-568C & ISO 11801:2002.", img: "./img/(LabPatch) Patch Cord/LabPatch Fiber Optic Patch/OM3 MPO MTX/0G4A6783.png" }
+      ]
+    },
+    {
+      name: "LabPlug",
+      count: 2,
+      products: [
+        { title: "LabPlug-6 (Cat 6)", text: "The LabPlug-6 is a Category 6 UTP Industrial Termination RJ45 Plug is a Toolless Termination plug for Industrial/Field of 4-pair unshielded twisted pair cable.", img: "./img/(LabPlug) RJ45 Connector/LabPlug-6 (Cat 6)/0G4A0331.png" },
+        { title: "LabPlug-10 (Cat6A)", text: "LabPlug-6A is a termination jack and it’s Category 6 modular jacks, RJ-45 keystone jacks, is engineered to provide superior performance and reliability, supporting Gigabit Ethernet applications and beyond.", img: "./img/(LabPlug) RJ45 Connector/LabPlug-10 (Cat6A)/0G4A0346.png" }
+      ]
+    },
+    {
+      name: "LabPort",
+      count: 2,
+      products: [
+        { title: "LabPort-6", text: "LabPort-6 is a toolless termination jack and it’s Category 6 modular jacks, RJ-45 keystone jacks, is 8-position 8-conductor (8P8C) is engineered to provide superior performance...", img: "./img/(LabPort) Keystone Jack/LabPort-6/0G4A0329.png" },
+        { title: "LabPort-10", text: "CAT6A high-density (HD), FTP shielded modular jacks (8P8C) is designed to deliver advanced performance for 10G applications and backward compatibles with CAT6 and CAT5e systems.", img: "./img/(LabPort) Keystone Jack/LabPort-10/0G4A0344.png" }
+      ]
+    },
+    {
+      name: "LabPower",
+      count: 1,
+      products: [
+        { title: "(LabPower) ATS", text: "ATS is highly durable device that allows to transfer power source from any source to another if any electrical issue arise.", img: "./img/(LabPower) ATS/(LabPower) ATS/0G4A9890.png" }
+      ]
+    },
+    {
+      name: "LabTag",
+      count: 1,
+      products: [
+        { title: "(LabTag) Label Tag", text: "The Lab-Tag Self-Laminating Fiber Optic Cable Marker Tag is manufactured using ABS and provides identification in environments where adhesives will not work.", img: "./img/(LabTag) Label Tag/(LabTag) Label Tag/379A8335.png" }
+      ]
+    }
+  ];
+
+
+  const categoryList = document.getElementById("categoryList");
+  const cardContainer = document.getElementById("cardContainer");
+
+  // 🔹 Render category list
+  data.forEach((cat, index) => {
+    const li = document.createElement("li");
+    li.className = `list-group-item d-flex justify-content-between align-items-center ${index === 0 ? "active" : ""}`;
+    li.setAttribute("data-index", index);
+    li.innerHTML = `
+      ${cat.name}
+      <span class="badge num rounded-pill">${cat.count}</span>
+    `;
+    categoryList.appendChild(li);
+  });
+
+  // 🔹 Function to render cards
+// 🔹 Function to render cards
+function renderCards(categoryIndex) {
+  const category = data[categoryIndex];
+  cardContainer.innerHTML = "";
+
+  category.products.forEach(product => {
+    const cardHTML = `
+      <div class="col">
+        <div class="card-link-wrapper text-decoration-none" onclick='openProductPage("${product.title}")'>
+          <div class="card h-100 text-center card-hover">
+            <img src="${product.img}" class="card-img-top" alt="${product.title}" id="product-img">
+            <div class="card-body d-flex flex-column justify-content-between text-start">
+              <div>
+                <h5 class="card-title" style="font-weight: lighter">${product.title}</h5>
+                <p class="card-text" style="font-weight: lighter; font-size: 14px">
+                  ${product.text}
+                </p>
+              </div>
+              <br>
+              <div class="btn btn-dark mt-3" id="btnstyle2">Learn More</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    cardContainer.insertAdjacentHTML("beforeend", cardHTML);
+  });
+}
+
+function openProductPage(title) {
+
+  // 🔹 Save selected product title
+  localStorage.setItem("selectedTitle", title);
+
+  // 🔹 Save breadcrumb
+  localStorage.setItem("breadcrumb", JSON.stringify({
+    level1: "Products",
+    level2: title
+  }));
+
+  // 🔹 Save page state
+  localStorage.setItem("productPageState", JSON.stringify({
+    source: "index",
+    title
+  }));
+
+  window.location.href = "product.html";
+}
+
+
+
+  // 🔹 Handle category clicks
+  categoryList.addEventListener("click", (e) => {
+    if (e.target.closest("li")) {
+      const clicked = e.target.closest("li");
+
+      // Remove active from others
+      document.querySelectorAll("#categoryList li").forEach(li => li.classList.remove("active"));
+      clicked.classList.add("active");
+
+      // Load selected category
+      const index = clicked.getAttribute("data-index");
+      renderCards(index);
+    }
+  });
+
+  // 🔹 Initial load (first category)
+  renderCards(0);
+</script>
+
+
+
+
+
+<br><br><br><br><br>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+ 
+
+  <!-- Section: Links  -->
+  <section id="footer" class="" style="padding-top: 6px; background-color: #343a3f;">
+
+
+      <section class="d-flex justify-content-center justify-content-lg-between p-2" style="background-color: #343a3f; margin-top: 10px;">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>For product inquiries, please email to <span style="color: #F1592A;">info@kabellab.com</span></span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+ 
+    <!-- Right -->
+  </section>
+<hr>
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="./img/KabellabLogoBtn.png" width="20px"> KABELLAB
+          </h6>
+         <p style="font-size: small;">
+           Kabellab was established in 2009 by Brian who owns all the Kabellab products development and design. Kabellab has appointed agents/partners in a few countries, which are Brunei Darussalam, Malaysia, Taiwan & China.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+           Research & Design
+          </h6>
+          <p style="font-size: smaller;">
+           Spg 845-10-43, Block C
+
+No.22, Kg Jangsak,
+
+Bandar Seri Begawan BF2720
+
+Brunei Darussalam
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            SEA Sales & Marketing
+          </h6>
+          <p style="font-size: smaller;">
+           The Square @ One City
+T1-09-04, Jln USJ 25/1
+47650 Subang Jaya
+Selangor Darul Ehsan.
+Malaysia.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Manufacturing & Production
+          </h6>
+          <p style="font-size: smaller;">
+            A Building, XinFa Industry Zone
+BiYuan Road Fenggang Town
+Dongguang
+Guangdong Province
+China
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div id="footer" class="text-left p-4" style="background-color: #1C2125;">
+        © 2025 Kabellab | Simple & Nice. All rights reserved.
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+    <script
+      src="../assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+</body>
+</html>
