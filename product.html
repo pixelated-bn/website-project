@@ -222,9 +222,10 @@
 
 
   <!-- FILTER BOX -->
+   <!--
   <div class="filter-box p-3 shadow-sm" >
 
-    <!-- Header -->
+   
     <div class="d-flex justify-content-between align-items-center mb-2">
       <span style="font-weight:bold; font-size: 16px;">Select by Filter</span>
       <a href="#" class="text-dark small">Clear</a>
@@ -232,7 +233,7 @@
 
     <hr>
 
-    <!-- FILTER GROUP 1 -->
+   
     <div class="mb-3">
       <div class="font-weight-bold mb-2" style="color: #F1592A;">Number of Computers</div>
       <div class="form-check mb-2">
@@ -252,7 +253,7 @@
 
     <hr>
 
-    <!-- FILTER GROUP 2 -->
+   
     <div class="mb-3">
       <div class="font-weight-bold mb-2" style="color: #F1592A;">Console Interface</div>
       <div class="form-check mb-2">
@@ -281,7 +282,7 @@
     <hr>
 
 
-      <!-- FILTER GROUP 3 -->
+      
     <div class="mb-3">
       <div class="font-weight-bold mb-2" style="color: #F1592A;">Special Features</div>
       <div class="form-check mb-2">
@@ -308,6 +309,7 @@
 
 
   </div>
+-->
 
 </div>
 
@@ -339,25 +341,7 @@
       "./img/(LabActiv) Active Equipment/LabActiv-IoT/AM100/AM-正-(102)---修图--中性.png",
       "./img/(LabActiv) Active Equipment/LabActiv-IoT/AM100/AM-背面.png"
     ],
-    text: "Description 1",
- 
-     description: `
-      <p>This is Product A description.</p>
-    `,
-    features: `
-      <ul>
-        <li>Feature A1</li>
-        <li>Feature A2</li>
-      </ul>
-    `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
-       <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
-        </a>
-      </p>
-    `
+    text: "Description 1"
   },
               { 
                 name: "EM500", img: "./img/(LabActiv) Active Equipment/LabActiv-IoT/EM500/EM500.PAR.png",
@@ -467,11 +451,82 @@
 <li>LFP function support</li>
       </ul>
     `,
+ technical: [
+  {
+    section: "Connectivity & Standards",
+    specs: [
+      { label: "IEEE Standard", value: `
+      <ul>
+        <li>IEEE 802.3 / 802.3u / 802.3ab compliant</li>
+<li>10/100/1000 Mbps Ethernet support</li>
+<li>IEEE 802.3x flow control for stable data transmission</li>
+</ul>`
+},
+      { label: "RJ45 Port Interface", value: `
+      <ul>
+        <li>1 × Gigabit RJ45 port</li>
+      <li>Auto MDI/MDI-X</li>
+      <li>Auto-negotiation</li>
+</ul>` },
+      { label: "SFP Slot Interface", value: `
+      <ul>
+        <li>1xSFP Slot</li>
+<li>Dual Mode, Auto Detection</li>
+<li>Compatible SX/LX/BX Transceiver</li>
+</ul>` }
+    ]
+  },
+  {
+    section: "Power & Physical Specs",
+    specs: [
+      { label: "Power", value: `
+      <ul>
+        <li>Input: AC 100–240V, 50/60Hz</li>
+<li>Max current: 0.15A</li>
+<li>Power consumption: < 3W (low power design)</li>
+</ul>` },
+      { label: "LED Indicators", value: `
+      <ul>
+        <li>TP Link Speed: 10M / 100M / 1000M</li>
+<li>FX Fiber Speed: 100M / 1000M</li>
+<li>Power (PWR) status indicator</li>
+</ul>` },
+      { label: "Physical", value: `
+      <ul>
+        <li>Dimensions: 71 × 94 × 26 mm</li>
+<li>Weight: 200 g</li>
+</ul>` }
+    ]
+  },
+  {
+    section: "Network Media Support",
+    specs: [
+      { label: "Ethernet (RJ45)", value: `
+      <ul>
+        <li>10/100/1000BASE-T</li>
+<li>Supports Cat5 / Cat5e / Cat6 UTP cables</li>
+<li>Up to 100 meters</li>
+</ul>` },
+      { label: "Fiber (Multi-mode)", value: `
+      <ul>
+        <li>100/1000BASE-SX</li>
+<li>Supports 50/125μm and 62.5/125μm fiber</li>
+<li>Up to 550 meters (depending on SFP module)</li>
+</ul>` },
+      { label: "Fiber (Single-mode)", value: `
+      <ul>
+        <li>100/1000BASE-LX</li>
+<li>Long-distance fiber support</li>
+<li>Up to 10–120 km (depending on SFP module)</li>
+</ul>` }
+    ]
+  }
+],
     datasheet: `
-   <p>Please click on the link below to download the data sheet.
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabActiv) Active Equipment/LabActiv-MS2/LabActiv-MS2.pdf" id="datalink" target="_blank">
+          Download LabActiv-MS2
         </a>
       </p>
     `
@@ -503,7 +558,7 @@
     `,
     features: `
       <ul>
-        <li>1-port 10/100/1000BASE-T RJ45 with auto MDI / MDI-X function</li>
+<li>1-port 10/100/1000BASE-T RJ45 with auto MDI / MDI-X function</li>
 <li>1xSFP Port, 100Base-FX or 1000Base-X dual mode (auto detection)</li>
 <li>Supports IEEE802.3af PoE (15.4W) or IEEE802.3at PoE+(30W)</li>
 <li>Supports Link Fault Pass Through</li>
@@ -515,11 +570,68 @@
       </ul>
 
     `,
+     technical: [
+  {
+    section: "Connectivity & Standards",
+    specs: [
+      { label: "Ethernet", value: `
+      <ul>
+        <li>IEEE 802.3 / 802.3u / 802.3ab / 802.3z compliant</li>
+<li>Supports Gigabit Ethernet</li>
+<li>PoE support (IEEE 802.3af / 802.3at)</li>
+<li>Store-and-forward switching</li>
+<li>Forwarding rate up to 1.48 Mpps</li>
+<li>Jumbo frame support (up to 9K bytes)</li>
+<li>Packet buffer: 1 Mbit</li>
+<li>MAC address table: 2K entries</li>
+</ul>`
+}
+    ]
+  },
+  {
+    section: "Power & Physical Specs",
+    specs: [
+      { label: "Power", value: `
+      <ul>
+        <li>Input: 12–48V DC (2-pin terminal block)</li>
+<li>Output: 48V DC</li>
+<li>Power consumption: up to 36W</li>
+</ul>` },
+      { label: "LED Indicators", value: `
+      <ul>
+        <li>Power (PWR)</li>
+<li>Link / Activity (L/A)</li>
+<li>PoE status</li>
+<li>Fiber link status (100M/1000M)</li>
+</ul>` },
+      { label: "Physical", value: `
+      <ul>
+        <li>Dimensions: 95 × 70 × 30 mm</li>
+<li>Weight: 0.25 kg</li>
+ <li>Aluminum casing</li>
+<li>DIN-rail or wall-mount installation</li>
+</ul>` }
+    ]
+  },
+  {
+    section: "Interfaces",
+    specs: [
+      { label: "Connector", value: `
+      <ul>
+          <li>1 × RJ45 PoE+ port (up to 30W)</li>
+</ul>` },
+      { label: "Optical Port", value: `
+      <ul>
+        <li>1 × SFP slot (auto 100/1000 Mbps)</li>
+</ul>` }
+    ]
+  }
+],
     datasheet: `
-     <p>Please click on the link below to download the data sheet.
+    <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabActiv) Active Equipment/LabActiv-REVO 1/LabActiv-REVO 1.pdf" id="datalink" target="_blank">
+          Download LabActiv-REVO 1
         </a>
       </p>
     `
@@ -585,11 +697,68 @@
 <li>Environmentally hardened -40°C to 75°C (-40°F to 167°F) operating temperature</li>
       </ul>
     `,
+         technical: [
+  {
+    section: "Connectivity & Standards",
+    specs: [
+      { label: "Ethernet", value: `
+      <ul>
+        <li>IEEE 802.3 / 802.3u / 802.3ab / 802.3z compliant</li>
+<li>Supports Gigabit Ethernet</li>
+<li>PoE support (IEEE 802.3af / 802.3at)</li>
+<li>Store-and-forward switching</li>
+<li>Forwarding rate up to 1.48 Mpps</li>
+<li>Jumbo frame support (up to 9K bytes)</li>
+<li>Packet buffer: 1 Mbit</li>
+<li>MAC address table: 2K entries</li>
+</ul>`
+}
+    ]
+  },
+  {
+    section: "Power & Physical Specs",
+    specs: [
+      { label: "Power", value: `
+      <ul>
+        <li>Input: 12–48V DC (2-pin terminal block)</li>
+<li>Output: 48V DC</li>
+<li>Power consumption: up to 65W</li>
+</ul>` },
+      { label: "LED Indicators", value: `
+      <ul>
+        <li>Power (PWR)</li>
+<li>Link / Activity (L/A)</li>
+<li>PoE status</li>
+<li>Fiber link status (100M/1000M)</li>
+</ul>` },
+      { label: "Physical", value: `
+      <ul>
+        <li>Dimensions: 95 × 70 × 30 mm</li>
+<li>Weight: 0.25 kg</li>
+ <li>Aluminum casing</li>
+<li>DIN-rail or wall-mount installation</li>
+</ul>` }
+    ]
+  },
+  {
+    section: "Interfaces",
+    specs: [
+      { label: "Connector", value: `
+      <ul>
+          <li>1 × RJ45 PoE+ port (up to 30W)</li>
+</ul>` },
+      { label: "Optical Port", value: `
+      <ul>
+        <li>1 × SFP slot (auto 100/1000 Mbps)</li>
+</ul>` }
+    ]
+  }
+],
     datasheet: `
-   <p>Please click on the link below to download the data sheet.
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabActiv) Active Equipment/LabActiv-REVO 2/LabActiv-REVO 2.pdf" id="datalink" target="_blank">
+          Download LabActiv-REVO 2
         </a>
       </p>
     `
@@ -634,11 +803,92 @@
       </ul>
 
     `,
+         technical: [
+  {
+    section: "Perimeter",
+    specs: [
+      { label: "Network & Switching Features", value: `
+      <ul>
+        <li>IEEE 802.1x port-based authentication</li>
+<li>VLAN support (IEEE 802.1Q tagging)</li>
+<li>QoS with 4 priority queues per port (IEEE 802.1p)</li>
+<li>Rapid Spanning Tree (IEEE 802.1w) & Spanning Tree (IEEE 802.1D)</li>
+<li>Link aggregation (IEEE 802.3ad trunking)</li>
+<li>Flow control (IEEE 802.3x)</li>
+<li>LLDP support (IEEE 802.1ab)</li>
+</ul>`
+},
+ { label: "Performance", value: `
+      <ul>
+        <li>Store-and-forward switching (full/half duplex)</li>
+<li>Packet forwarding rate: 14.88 Mpps</li>
+<li>Backplane bandwidth: 20 Gbps</li>
+<li>Low latency: < 7 μs</li>
+</ul>`
+},
+ { label: "PoE", value: `
+      <ul>
+        <li>PoE standard: IEEE 802.3af / 802.3at (PoE+)</li>
+ <li>4 × PoE+ ports (up to 30W per port)</li>
+ <li>Maximum PoE power budget (system-dependent)</li>
+</ul>`
+},
+ { label: "Capacity", value: `
+      <ul>
+        <li>MAC address table: 16K entries</li>
+<li>Packet buffer: 4 Mbit</li>
+<li>Maximum frame size: up to 1532 bytes</li>
+</ul>`
+}
+    ]
+  },
+  {
+    section: "Power & Physical Specs",
+    specs: [
+      { label: "Power", value: `
+      <ul>
+        <li>Input power: DC 48–57V</li>
+<li>Power input: Phoenix terminal or DC socket</li>
+<li>Reverse polarity protection supported</li>
+<li>Overload protection supported</li>
+<li>Power consumption: < 15W (without PoE load)</li>
+</ul>` },
+      { label: "LED Indicators", value: `
+      <ul>
+        <li>Power status (PWR)</li>
+<li>Link / Activity status</li>
+<li>Fiber link status</li>
+</ul>` },
+      { label: "Physical", value: `
+      <ul>
+        <li>Protection rating: IP40 aluminum enclosure</li>
+<li>Fanless natural cooling design</li>
+<li>Dimensions: 138 × 106 × 41 mm</li>
+<li>Weight: 600 g</li>
+<li>Mounting: DIN-rail or wall-mount</li>
+</ul>` }
+    ]
+  },
+  {
+    section: "Interfaces",
+    specs: [
+      { label: "Connector", value: `
+      <ul>
+          <li>4xRJ45 PoE+ 30W</li>
+</ul>` },
+      { label: "Optical Port", value: `
+      <ul>
+        <li>2xSFP Slot 
+Dual Mode, Auto Detection</li>
+</ul>` }
+    ]
+  }
+],
     datasheet: `
-  <p>Please click on the link below to download the data sheet.
+  <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabActiv) Active Equipment/LabActiv-REVO 4/LabActiv-REVO 4.pdf" id="datalink" target="_blank">
+          Download LabActiv-REVO 4
         </a>
       </p>
     `
@@ -682,18 +932,7 @@
 <li>DHCP RFC 1541, 1542</li>
 <li>DIN trail /Wall mounting</li>
       </ul>
-
-
-    `,
-    datasheet: `
-   <p>Please click on the link below to download the data sheet.
-       <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
-        </a>
-      </p>
     `
- 
             }
           ]
         },
@@ -738,13 +977,88 @@
 <li>Supports RADIUS, TACACS+, IEEE802.1X, HTTPS and SSH and other network security functions</li>
       </ul>
 
-
     `,
+         technical: [
+  {
+    section: "Network & Standards",
+    specs: [
+      { label: "Supported Standards", value: `
+      <ul>
+        <li>Ethernet: 10/100/1000 Mbps (Gigabit support)</li>
+<li>Fiber support: SX / LX</li>
+<li>VLAN support (IEEE 802.1Q)</li>
+<li>Port authentication (IEEE 802.1x)</li>
+<li>Link aggregation (LACP)</li>
+<li>Spanning Tree (STP)</li>
+<li>Flow control (IEEE 802.3x)</li>
+<li>Energy Efficient Ethernet (EEE)</li>
+<li>Ethernet OAM support</li>
+<li>Time sync (IEEE 1588)</li>
+</ul>`
+},
+ { label: "Performance", value: `
+      <ul>
+        <li>Store-and-forward switching</li>
+<li>Low latency: < 7 μs</li>
+<li>Backplane bandwidth: 56 Gbps</li>
+</ul>`
+},
+ { label: "Capacity", value: `
+      <ul>
+        <li>Packet buffer: 4 Mbit</li>
+<li>MAC address table: 8K entries</li>
+<li>Max frame size: up to 10K bytes</li>
+</ul>`
+}
+    ]
+  },
+  {
+    section: "Power & Physical Specs",
+    specs: [
+      { label: "Power", value: `
+      <ul>
+        <li>Input: DC 48–57V</li>
+<li>Power input: Phoenix terminal / DC socket</li>
+<li>Reverse polarity protection supported</li>
+<li>Overload protection supported</li>
+<li>Power consumption: < 15W (without PoE load)</li>
+</ul>` },
+      { label: "LED Indicators", value: `
+      <ul>
+        <li>Power status (PWR)</li>
+<li>Link / Activity status</li>
+<li>Fiber link status</li>
+</ul>` },
+      { label: "Physical", value: `
+      <ul>
+        <li>IP40 aluminum casing</li>
+<li>Fanless (natural cooling) design</li>
+<li>Dimensions: 160 × 130 × 70 mm</li>
+<li>Weight: 1 kg</li>
+<li>Mounting: DIN-rail or wall-mount</li>
+</ul>` }
+    ]
+  },
+  {
+    section: "Interfaces",
+    specs: [
+      { label: "Connector", value: `
+      <ul>
+          <li>16 × RJ45 PoE+ ports (up to 30W each)</li>
+</ul>` },
+      { label: "Optical Port", value: `
+      <ul>
+        <li>
+4 × SFP slots (dual mode, auto-detection)</li>
+</ul>` }
+    ]
+  }
+],
     datasheet: `
-   <p>Please click on the link below to download the data sheet.
+    <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabActiv) Active Equipment/LabActiv-REVO 8F/LabActiv-REVO 8F.pdf" id="datalink" target="_blank">
+          Download LabActiv-REVO 8F
         </a>
       </p>
     `
@@ -790,11 +1104,88 @@
 
 
     `,
+         technical: [
+  {
+    section: "Network & Standards",
+    specs: [
+      { label: "Supported Standards", value: `
+      <ul>
+        <li>Gigabit Ethernet support (10/100/1000 Mbps)</li>
+<li>Fiber support: SX / LX</li>
+<li>VLAN support (802.1Q)</li>
+<li>Port authentication (802.1x)</li>
+<li>Link aggregation (LACP)</li>
+<li>Spanning Tree (STP)</li>
+<li>Flow control (802.3x)</li>
+<li>Energy Efficient Ethernet (EEE)</li>
+<li>Ethernet OAM support</li>
+<li>Time synchronization (IEEE 1588)</li>
+</ul>`
+},
+ { label: "Performance", value: `
+      <ul>
+        <li>Store-and-forward switching</li>
+<li>Low latency: < 7 μs</li>
+<li>Backplane bandwidth: 56 Gbps</li>
+</ul>`
+},
+ { label: "Capacity", value: `
+      <ul>
+        <li>Packet buffer: 4 Mbit</li>
+<li>MAC address table: 8K entries</li>
+<li>Max frame size: up to 10K bytes</li>
+<li>Packet forwarding rate: high-performance switching (model dependent)</li>
+</ul>`
+}
+    ]
+  },
+  {
+    section: "Power & Physical Specs",
+    specs: [
+      { label: "Power", value: `
+      <ul>
+        <li>Input: DC 48–57V</li>
+<li>Power input: Phoenix terminal / DC socket</li>
+<li>Reverse polarity protection supported</li>
+<li>Overload protection supported</li>
+<li>Power consumption: < 15W (without PoE load)</li>
+</ul>` },
+      { label: "LED Indicators", value: `
+      <ul>
+        <li>Power status (PWR)</li>
+<li>Link / Activity status</li>
+<li>Fiber link status</li>
+</ul>` },
+      { label: "Physical", value: `
+      <ul>
+        <li>IP40 aluminum casing</li>
+<li>Fanless (natural cooling) design</li>
+<li>Dimensions: 160 × 130 × 70 mm</li>
+<li>Weight: 1 kg</li>
+<li>Mounting: DIN-rail or wall-mount</li>
+</ul>` }
+    ]
+  },
+  {
+    section: "Interfaces",
+    specs: [
+      { label: "Connector", value: `
+      <ul>
+          <li>16 × RJ45 PoE+ ports (up to 30W each)
+</ul>` },
+      { label: "Optical Port", value: `
+      <ul>
+        <li>
+4 × SFP slots (dual mode, auto-detection)</li></li>
+</ul>` }
+    ]
+  }
+],
     datasheet: `
-     <p>Please click on the link below to download the data sheet.
+     <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabActiv) Active Equipment/LabActiv-REVO 16/LabActiv-REVO 16.pdf" id="datalink" target="_blank">
+          Download LabActiv-REVO 16
         </a>
       </p>
     `
@@ -822,21 +1213,22 @@
     
     features: `
       <ul>
-<li>Up to 10Gbps bi-directional data links</li>
-<li>RJ45 Max 30m</li>
+<li>Up to 10Gbps bi-directional data links</li>                   
+<li>RJ45 Max 30m </li>
 <li>Fully metallic enclosure for low EMI</li>
 <li>Compact RJ-45 Connector assembly</li>
-<li>Hot-pluggable SFP footprint</li>
-<li>Low power dissipation</li>
+<li>Hot-pluggable SFP footprint</li>      
+<li>Low power dissipation</li>   
+<li>Extended case temperature: 0°C to 70°C</li>
       </ul>
 
 
     `,
     datasheet: `
-   <p>Please click on the link below to download the data sheet.
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabActiv) Active Equipment/LabActiv-SFP 10G Copper/LabActiv-SFP.pdf" id="datalink" target="_blank">
+          Download LabActiv-SFP
         </a>
       </p>
     ` 
@@ -1146,7 +1538,45 @@
       </ul>
 
 
-    `,  
+    `,
+    technical: [
+  {
+    section: "Specifications",
+    specs: [
+      { label: "Number of Rack Spaces", 
+      value: `1U`
+      },
+      { label: "Orientation", 
+      value: `Horizontal` 
+        },
+      { label: "Material", 
+      value: `Aluminum, SPCC & Plastic (UL 94V-0)` 
+    },
+      { label: "Dimensions (HxWxD)", 
+      value: `(H)44 x (W)482 x (D)100 (mm)` 
+    },
+      { label: "Installation", 
+      value: `Standard EIA 19” Rack Rails`
+     },
+      { label: "Style", 
+      value: `Finger Duct with Cover`
+      },
+      { label: "Product Type", 
+      value: `Single Sided` 
+        },
+      { label: "Cable Capacity", 
+      value: `	
+48 Cable Capacity (5mm~7mm)` 
+    },
+      { label: "Weight", 
+      value: `321g` 
+    },
+      { label: "Accessories", 
+      value: `M6*15mm Screw x4 and M6 Nut x4`
+     }
+    ]
+  }
+], 
             }
           ]
         },
@@ -1189,7 +1619,45 @@
       </ul>
 
 
-    `,  
+    `,
+    technical: [
+  {
+    section: "Specifications",
+    specs: [
+      { label: "Number of Rack Spaces", 
+      value: `1U`
+      },
+      { label: "Orientation", 
+      value: `Horizontal` 
+        },
+      { label: "Material", 
+      value: `Aluminum, SPCC & Plastic (UL 94V-0)` 
+    },
+      { label: "Dimensions (HxWxD)", 
+      value: `(H)44 x (W)482 x (D)800 (mm)` 
+    },
+      { label: "Installation", 
+      value: `Standard EIA 19” Rack Rails`
+     },
+      { label: "Style", 
+      value: `Finger Duct with Cover`
+      },
+      { label: "Product Type", 
+      value: `Box Type` 
+        },
+      { label: "Cable Capacity", 
+      value: `	
+      48 Cable Capacity (5mm~7mm)` 
+    },
+      { label: "Weight", 
+      value: `- g` 
+    },
+      { label: "Accessories", 
+      value: `M6*15mm Screw x4 and M6 Nut x4`
+     }
+    ]
+  }
+],  
             }
           ]
         },
@@ -1232,7 +1700,45 @@
       </ul>
 
 
-    `,  
+    `,
+    technical: [
+  {
+    section: "Specifications",
+    specs: [
+      { label: "Number of Rack Spaces", 
+      value: `2U`
+      },
+      { label: "Orientation", 
+      value: `Horizontal` 
+        },
+      { label: "Material", 
+      value: `Aluminum, SPCC & Plastic (UL 94V-0)` 
+    },
+      { label: "Dimensions (HxWxD)", 
+      value: `(H)88 x (W)482 x (D)800 (mm)` 
+    },
+      { label: "Installation", 
+      value: `Standard EIA 19” Rack Rails`
+     },
+      { label: "Style", 
+      value: `Finger Duct with Cover`
+      },
+      { label: "Product Type", 
+      value: `Box Type` 
+        },
+      { label: "Cable Capacity", 
+      value: `	
+      96 Cable Capacity (5mm~7mm)` 
+    },
+      { label: "Weight", 
+      value: `- g` 
+    },
+      { label: "Accessories", 
+      value: `M6*15mm Screw x4 and M6 Nut x4`
+     }
+    ]
+  }
+],    
             }
           ]
         },
@@ -1275,7 +1781,45 @@
       </ul>
 
 
-    `,   
+    `,
+    technical: [
+  {
+    section: "Specifications",
+    specs: [
+      { label: "Number of Rack Spaces", 
+      value: `2U`
+      },
+      { label: "Orientation", 
+      value: `Horizontal` 
+        },
+      { label: "Material", 
+      value: `Aluminum, SPCC & Plastic (UL 94V-0)` 
+    },
+      { label: "Dimensions (HxWxD)", 
+      value: `(H)88 x (W)482 x (D)100 (mm)` 
+    },
+      { label: "Installation", 
+      value: `Standard EIA 19” Rack Rails`
+     },
+      { label: "Style", 
+      value: `Finger Duct with Cover`
+      },
+      { label: "Product Type", 
+      value: `Single Sided` 
+        },
+      { label: "Cable Capacity", 
+      value: `	
+      96 Cable Capacity (5mm~7mm)` 
+    },
+      { label: "Weight", 
+      value: `437g` 
+    },
+      { label: "Accessories", 
+      value: `M6*15mm Screw x4 and M6 Nut x4`
+     }
+    ]
+  }
+],      
             }
           ]
         },
@@ -1317,15 +1861,73 @@
 
 <p>Manufactured with innovated composite material, making LabOSP Cable Joint Box system an ideal solution of strong, light, flexible, time & cost saving comparing to concrete manholes.</p>
 
+    `, 
+    features: `
+      <ul>
+        <li>Size:  450 x 450 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Fire Resistant</li>
+      </ul>
+
+
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+    technical: [
+  {
+    section: "Internal Size (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `450 (L) x 450 (W)`
+      },
+      { label: "Extended", 
+      value: `450 (L) x 450 (W)` 
+        }
+    ]
+  },
+  {
+    section: "External Size (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `540 (L) x 540 (W)`
+      },
+      { label: "Extended", 
+      value: `540 (L) x 540 (W)` 
+        }
+    ]
+  },
+  {
+    section: "Weight (kg)",
+    specs: [
+      { label: "Standard", 
+      value: `23.2 (Chamber) x 2.5 (Base)`
+      },
+      { label: "Extended", 
+      value: `36.4 (Chamber) x 2.5 (Base)` 
+        }
+    ]
+  },
+  {
+    section: "Height (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `600`
+      },
+      { label: "Extended", 
+      value: `900` 
+        }
+    ]
+  }
+],  
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/Cable Joint Box 0/LabOSP-CJB.pdf" id="datalink" target="_blank">
+          Download LabOSP-CJB
         </a>
       </p>
-    `   
+    `    
             }
           ]
         },
@@ -1347,15 +1949,73 @@
 
 <p>Manufactured with innovated composite material, making LabOSP Cable Joint Box system an ideal solution of strong, light, flexible, time & cost saving comparing to concrete manholes.</p>
 
+    `, 
+    features: `
+      <ul>
+    <li>Size:  450 x 900 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Fire Resistant</li>
+      </ul>
+
+
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+    technical: [
+  {
+    section: "Internal Size (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `450 (L) x 900 (W)`
+      },
+      { label: "Extended", 
+      value: `450 (L) x 900 (W)` 
+        }
+    ]
+  },
+  {
+    section: "External Size (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `540 (L) x 1050 (W)`
+      },
+      { label: "Extended", 
+      value: `540 (L) x 1050 (W)` 
+        }
+    ]
+  },
+  {
+    section: "Weight (kg)",
+    specs: [
+      { label: "Standard", 
+      value: `33.6 (Chamber) x 5 (Base)`
+      },
+      { label: "Extended", 
+      value: `52.8 (Chamber) x 5 (Base)` 
+        }
+    ]
+  },
+  {
+    section: "Height (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `600`
+      },
+      { label: "Extended", 
+      value: `900` 
+        }
+    ]
+  }
+],  
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/Cable Joint Box 1/LabOSP-CJB.pdf" id="datalink" target="_blank">
+          Download LabOSP-CJB
         </a>
       </p>
-    `    
+    `   
             }
           ]
         },
@@ -1378,14 +2038,72 @@
 <p>Manufactured with innovated composite material, making LabOSP Cable Joint Box system an ideal solution of strong, light, flexible, time & cost saving comparing to concrete manholes.</p>
 
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+     features: `
+      <ul>
+    <li>Size:  450 x 1200 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Fire Resistant</li>
+      </ul>
+
+
+    `,
+    technical: [
+  {
+    section: "Internal Size (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `450 (L) x 1200 (W)`
+      },
+      { label: "Extended", 
+      value: `450 (L) x 1200 (W)` 
+        }
+    ]
+  },
+  {
+    section: "External Size (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `540 (L) x 1350 (W)`
+      },
+      { label: "Extended", 
+      value: `540 (L) x 1350 (W)` 
+        }
+    ]
+  },
+  {
+    section: "Weight (kg)",
+    specs: [
+      { label: "Standard", 
+      value: `40.2 (Chamber) x 7 (Base)`
+      },
+      { label: "Extended", 
+      value: `63.2 (Chamber) x 7 (Base)` 
+        }
+    ]
+  },
+  {
+    section: "Height (mm)",
+    specs: [
+      { label: "Standard", 
+      value: `600`
+      },
+      { label: "Extended", 
+      value: `900` 
+        }
+    ]
+  }
+],  
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/Cable Joint Box2/LabOSP-CJB.pdf" id="datalink" target="_blank">
+          Download LabOSP-CJB
         </a>
       </p>
-    `     
+    ` 
             }
           ]
         },
@@ -1406,14 +2124,27 @@
               <p>CJB1 Composite Manhole Cover conforms to BS EN124 D400 Class and is suitable for carriageways of roads (including pedes-trian streets), hard shoulders and parking areas, for all types of road vehicles.</p>
 
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+      features: `
+      <ul>
+    <li>Size:  1200 x 675 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Locking System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/CJB 1 Cover/With Hinge/LabOSP-CJB 1 Cover.pdf" id="datalink" target="_blank">
+          Download LabOSP-CJB 1 Cover
         </a>
       </p>
-    `      
+    `   
             },
             { 
               name: "CJB 1 Cover (Without Hinge)", img: "./img/(LabOSP) OutSide Plant/CJB 1 Cover/Without Hinge/withouthinge (4).png",
@@ -1429,14 +2160,27 @@
               <p>CJB1 Composite Manhole Cover conforms to BS EN124 D400 Class and is suitable for carriageways of roads (including pedes-trian streets), hard shoulders and parking areas, for all types of road vehicles.</p>
 
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+       features: `
+      <ul>
+    <li>Size:  1200 x 675 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Locking System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/CJB 1 Cover/Without Hinge/LabOSP-CJB 1 Cover.pdf" id="datalink" target="_blank">
+          Download LabOSP-CJB 1 Cover
         </a>
       </p>
-    `      
+    `        
             },
           ]
         },
@@ -1458,14 +2202,27 @@
               <p>FJB0 Composite Manhole Cover Options to BS EN124 B125 (for footways, pedestrian areas and comparable parks or car parking decks) and EN124 C250 (for gullytops installed in the area of curbside channels of roads).</p>
 
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+       features: `
+      <ul>
+    <li>Size:  672 x 460 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Locking System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/FJB 0 Cover/B125/LabOSP-FJB 0 Cover.pdf" id="datalink" target="_blank">
+          Download LabOSP-FJB 0 Cover
         </a>
       </p>
-    `       
+    `         
             },
             { 
               name: "FJB 0 Cover (C250)", img: "./img/(LabOSP) OutSide Plant/FJB 0 Cover/C250/C250 (4).png",
@@ -1481,14 +2238,27 @@
               <p>FJB0 Composite Manhole Cover Options to BS EN124 B125 (for footways, pedestrian areas and comparable parks or car parking decks) and EN124 C250 (for gullytops installed in the area of curbside channels of roads).</p>
 
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+      features: `
+      <ul>
+    <li>Size:  672 x 460 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Locking System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/FJB 0 Cover/C250/LabOSP-FJB 0 Cover.pdf" id="datalink" target="_blank">
+          Download LabOSP-FJB 0 Cover
         </a>
       </p>
-    `        
+    `           
             }
           ]
         },
@@ -1510,14 +2280,27 @@
               <p>FJB3 Composite Manhole Cover Options to BS EN124 B125 (for footways, pedestrian areas and comparable parks or car parking decks) and EN124 C250 (for gullytops installed in the area of curbside channels of roads).</p>
 
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+      features: `
+      <ul>
+    <li>Size:  915 x 460 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Locking System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/FJB 3 Cover/B125/LabOSP-FJB 3.pdf" id="datalink" target="_blank">
+          Download LabOSP-FJB 3
         </a>
       </p>
-    `         
+    `        
             },
             { 
               name: "FJB 3 Cover (C250)", img: "./img/(LabOSP) OutSide Plant/FJB 3 Cover/C250/FJB3(C250) (1).png",
@@ -1533,11 +2316,24 @@
               <p>FJB3 Composite Manhole Cover Options to BS EN124 B125 (for footways, pedestrian areas and comparable parks or car parking decks) and EN124 C250 (for gullytops installed in the area of curbside channels of roads).</p>
 
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+       features: `
+      <ul>
+    <li>Size:  915 x 460 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Locking System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/FJB 3 Cover/C250/LabOSP-FJB 3.pdf" id="datalink" target="_blank">
+          Download LabOSP-FJB 3
         </a>
       </p>
     `    
@@ -1561,11 +2357,24 @@
               <p>FJB4 Composite Manhole Cover Options to BS EN124 B125 (for footways, pedestrian areas and comparable parks or car parking decks) and EN124 C250 (for gullytops installed in the area of curbside channels of roads).</p>
 
     `,
-    datasheet: `
-     <p>Please click on the link below to download the data sheet.
+         features: `
+      <ul>
+    <li>Size:  1375 x 460 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Locking System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/FJB 4 Cover/B125/LabOSP-FJB 4 Cover.pdf" id="datalink" target="_blank">
+          Download LabOSP-FJB 4 Cover
         </a>
       </p>
     `    
@@ -1584,14 +2393,27 @@
               <p>FJB4 Composite Manhole Cover Options to BS EN124 B125 (for footways, pedestrian areas and comparable parks or car parking decks) and EN124 C250 (for gullytops installed in the area of curbside channels of roads).</p>
 
     `,
-    datasheet: `
-      <p>Please click on the link below to download the data sheet.
+         features: `
+      <ul>
+    <li>Size:  1375 x 460 (mm)</li>
+<li>Anti UV</li>
+<li>Light Weight</li>
+<li>High Durabilities</li>
+<li>Anti-Corrosive</li>
+<li>Locking System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
        <br>
-        <a href="" id="datalink" target="_blank">
-          Download Data Sheet
+        <a href="./img/(LabOSP) OutSide Plant/FJB 4 Cover/C250/LabOSP-FJB 4 Cover.pdf" id="datalink" target="_blank">
+          Download LabOSP-FJB 4 Cover
         </a>
       </p>
-    `    
+    `     
             }
           ]
         }
@@ -2052,12 +2874,12 @@
           title: "(LabPower) ATS",
           products: [
             { 
-              name: "(LabPower) ATS", img: "./img/(LabPower) ATS/(LabPower) ATS/0G4A9890.png",
+              name: "(LabPower) ATS", img: "./img/LabPower/(LabPower) ATS/0G4A9890.png",
                  images: [
-"./img/(LabPower) ATS/(LabPower) ATS/0G4A9890.png",
-"./img/(LabPower) ATS/(LabPower) ATS/0G4A9897.png",
-"./img/(LabPower) ATS/(LabPower) ATS/0G4A9902.png",
-"./img/(LabPower) ATS/(LabPower) ATS/0G4A9908.png"
+"./img/LabPower/(LabPower) ATS/0G4A9890.png",
+"./img/LabPower/(LabPower) ATS/0G4A9897.png",
+"./img/LabPower/(LabPower) ATS/0G4A9902.png",
+"./img/LabPower/(LabPower) ATS/0G4A9908.png"
     ],
               text: "ATS automation transfer is highly effecient and effective causing it a must have for any location that has severe power issue while maintaining operations 24 hours.",
  
@@ -2068,6 +2890,343 @@
 
 
     `, 
+            }
+          ]
+        },
+        {
+          title: "LabPower-MDU RM30030X",
+          products: [
+            { 
+              name: "LabPower-MDU RM30030X", img: "./img/LabPower/LabPower-MDU RM30030X/MDURM30030X (1).jpeg",
+                 images: [
+"./img/LabPower/LabPower-MDU RM30030X/MDURM30030X (1).jpeg",
+"./img/LabPower/LabPower-MDU RM30030X/MDURM30030X (2).jpeg",
+"./img/LabPower/LabPower-MDU RM30030X/MDURM30030X (3).jpeg"
+    ],
+              text: "The LabPower-MDU 30-300kVA 3-in, 3-out UPS features a modular design and N+X parallel redundancy, with capacity per module ranging from 30kVA to 300kVA",
+ 
+     description: `
+        <p>The LabPower-MDU 30-300kVA 3-in, 3-out UPS features a modular design and N+X parallel redundancy, with capacity per module ranging from 30kVA to 300kVA.</p>
+        
+        <p>This flexible configuration allows users to gradually expand and customize their power protection.</p>
+        
+        <p>The series effectively addresses nearly all power issues—including outages, overvoltage, undervoltage, voltage sags, oscillations, high- voltage pulses, fluctuations, surges, harmonic distortion, electromagnetic interference, frequency variations, and other common power disturbances—ensuring reliable and stable operation for critical loads.</p>
+
+
+    `,
+         features: `
+      <ul>
+    <li>30kVA to 300kVA Modular UPS</li>
+<li>3 Phase Power System</li>
+<li>Lithium Battery power System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
+       <br>
+        <a href="./img/LabPower/LabPower-MDU RM30030X/LabPower-MDU RM30030X.pdf" id="datalink" target="_blank">
+          Download LabPower-MDU RM30030X
+        </a>
+      </p>
+    `   
+            }
+          ]
+        },
+        {
+          title: "LabPower-MDU RM30050X",
+          products: [
+            { 
+              name: "LabPower-MDU RM30050X", img: "./img/LabPower/LabPower-MDU RM30050X/MDURM30050X (1).jpeg",
+                 images: [
+"./img/LabPower/LabPower-MDU RM30050X/MDURM30050X (1).jpeg",
+"./img/LabPower/LabPower-MDU RM30050X/MDURM30050X (2).jpeg",
+"./img/LabPower/LabPower-MDU RM30050X/MDURM30050X (3).jpeg"
+    ],
+              text: "The LabPower-MDU 3P 50X modules, each rated at 50kW, can be combined to achieve capacities of 200kW, 300kW, 400kW, 500kW, and 600kW.",
+ 
+     description: `
+        <p>The LabPower-MDU 3P 50X modules, each rated at 50kW, can be combined to achieve capacities of 200kW, 300kW, 400kW, 500kW, and 600kW.</p>
+        
+        <p>This centralized bypass, 3-input- 3-out modular UPS features digital control, a modular architecture, and N+X parallel redundancy technology.</p>
+        
+        <p>With flexible capacity options from 50kVA to 600kVA per module, its scalable design facilitates easy configuration and gradual investment.</p>
+        
+        <p>Supporting up to four parallel units, it delivers a total capacity of up to 2400kVA, making it ideal for high-demand, mission-critical environments.</p>
+
+
+    `,
+      features: `
+      <ul>
+    <li>50kVA to 600kVA Modular UPS</li>
+<li>3 Phase Power System</li>
+<li>Lithium Battery power System</li>
+      </ul>
+
+
+    `,
+   
+ datasheet: `
+   <p>Please click on the link below to download the full data sheet.
+       <br>
+        <a href="./img/LabPower/LabPower-MDU RM30050X/LabPower-MDU RM30050X.pdf" id="datalink" target="_blank">
+          Download LabPower-MDU RM30050X
+        </a>
+      </p>
+    `   
+            }
+          ]
+        },
+        {
+          title: "LabPower-PDU BS20W",
+          products: [
+            { 
+              name: "LabPower-PDU BS20W", img: "./img/LabPower/LabPower-PDU BS20W/PDUBS20W (1).jpeg",
+                 images: [
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (1).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (2).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (3).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (4).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (5).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (6).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (7).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (8).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (9).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (10).jpeg",
+"./img/LabPower/LabPower-PDU BS20W/PDUBS20W (11).jpeg",
+
+    ],
+              text: "The Kabellab LabPower-PDU BS20W is a basic 20-way Power Distribution Unit designed for reliable and efficient power management in data centers, laboratories, and industrial environments.",
+ 
+     description: `
+        <p>The Kabellab LabPower-PDU BS20W is a basic 20-way Power Distribution Unit designed for reliable and efficient power management in data centers, laboratories, and industrial environments.</p>
+
+ <p>This model series offers three socket configuration options, catering to diverse equipment connection needs.</p>
+ 
+ <p>Each unit is equipped with a dual 3-digit 7-segment display for precise voltage and current monitoring, along with dual circuit breakers that provide enhanced protection and operational safety.</p>
+
+<p>Built with a vertical rack-mount design and IEC outlet configurations, the BS20W ensures optimized space usage, convenient installation, and dependable performance.</p>
+
+
+    `,
+       features: `
+      <ul>
+    <li>2-Way Circuit Breaker Protection</li>
+<li>Built-in Voltage & Current (V/A) Monitoring</li>
+<li>IEC 60320 C13 & C19 Output Connectors</li>
+<li>BS1363 UK Socket Compatibility</li>
+<li>IEC 60309 Industrial Connector Support</li>
+      </ul>
+
+    `,
+   
+    datasheet: `
+      <p>Please click on the link below to download the full data sheet.
+       <br>
+        <a href="./img/LabPower/LabPower-PDU BS20W/LabPower-PDU BS20W.pdf" id="datalink" target="_blank">
+          Download LabPower-PDU BS20W
+        </a>
+      </p>
+    `  
+            }
+          ]
+        },
+        {
+          title: "LabPower-RTA",
+          products: [
+            { 
+              name: "LabPower-RTA", img: "./img/LabPower/LabPower-RTA/RTA(SP) (1).png",
+                 images: [
+"./img/LabPower/LabPower-RTA/RTA(SP) (1).png",
+"./img/LabPower/LabPower-RTA/RTA(SP) (2).png",
+"./img/LabPower/LabPower-RTA/RTA(SP) (3).png",
+"./img/LabPower/LabPower-RTA/RTA(SP) (4).png",
+"./img/LabPower/LabPower-RTA/RTA(SP) (5).png",
+"./img/LabPower/LabPower-RTA/RTA(SP) (6).png",
+    ],
+              text: "LabPower-RTA Uninterruptible Power Supply (UPS) systems are crafted to deliver unrivaled power stability and efficiency.",
+ 
+     description: `
+        <p>LabPower-RTA Uninterruptible Power Supply (UPS) systems are crafted to deliver unrivaled power stability and efficiency. Equipped with true double-conversion technology, these systems provide clean, consistent power, safeguarding your equipment from voltage variations. The wide input voltage range (110-300VAC) guarantees flexibility in unpredictable power conditions.</p>
+
+ <p>For enhanced efficiency, our 1-3 KVA models include an ECO mode for energy savings, while 6K and 10K models feature adjustable charging currents and an emergency power-off function for tailored control and safety. Engineered for versatility, models up to 6KVA offer a dual Rack-Tower design and a hot-swappable battery setup to ensure seamless operation and maintenance.</p>
+ 
+ <p>Additionally, generator compatibility across 1KR, 2KR, and 3KR models ensures reliable backup during outages. Choose our UPS systems for comprehensive power protection tailored to your unique requirements.</p>
+
+
+    `,
+          features: `
+      <ul>
+    <li>True Double-Conversion Technology</li>
+<li>Input Power Factor Correction</li>
+<li>Output Power Factor of 0.8</li>
+<li>Wide Input Voltage Range (110-300VAC)</li>
+<li>ECO Mode for Energy Saving</li>
+<li>Rack-Tower 2-in-1 Design</li>
+<li>Hot-Swappable Battery Design</li>
+      </ul>
+    `,
+   
+    datasheet: `
+      <p>Please click on the link below to download the full data sheet.
+       <br>
+        <a href="./img/LabPower/LabPower-RTA/LabPower-RTA (SP).pdf" id="datalink" target="_blank">
+          Download LabPower-RTA
+        </a>
+      </p>
+    ` 
+            }
+          ]
+        },
+        {
+          title: "LabPower-RTL",
+          products: [
+            { 
+              name: "LabPower-RTL", img: "./img/LabPower/LabPower-RTL/RTL (1).jpeg",
+                 images: [
+"./img/LabPower/LabPower-RTL/RTL (1).jpeg",
+"./img/LabPower/LabPower-RTL/RTL (2).jpeg",
+"./img/LabPower/LabPower-RTL/RTL (3).jpeg",
+"./img/LabPower/LabPower-RTL/RTL (4).jpeg"
+    ],
+              text: "LabPower-RTL 20~180kVA series represents the pinnacle of technological advancement, seamlessly integrating cutting-edge online double conversion technology to establish a groundbreaking standard in safeguarding against grid anomalies.",
+ 
+     description: `
+        <p>LabPower-RTL 20~180kVA series represents the pinnacle of technological advancement, seamlessly integrating cutting-edge online double conversion technology to establish a groundbreaking standard in safeguarding against grid anomalies. Engineered to deliver a steadfast and pristine sinusoidal power supply, our UPS solutions ensure uninterrupted operation for our customers’ most critical applications.</p>
+
+<p>Driven by an unyielding commitment to innovation, each unit undergoes meticulous craftsmanship, surpassing even the highest performance expectations. Our relentless pursuit of excellence manifests in unparalleled reliability and performance, setting new benchmarks in the industry.</p>
+
+<p>Furthermore, our dedication to environmental stewardship permeates every facet of our design philosophy. With a sharp focus on sustainability, our UPS systems boast a significantly enhanced input power factor and minimal input current harmonics. This not only optimizes energy efficiency but also underscores our dedication to eco-conscious operation, ensuring a greener future for generations</p>
+
+
+    `,
+         features: `
+      <ul>
+    <li>Broad Input Voltage Range for stable operation</li>
+<li>Online Double Conversion Technology ensuring uninterrupted performance</li>
+<li>0.9 Output Power Factor for greater power efficiency</li>
+<li>N+X Redundancy for maximum uptime and system security</li>
+<li>Versatile Communication Options including RS485, Relay Card, USB, and SNMP</li>
+<li>Reliable and Robust Design for demanding environments</li>
+<li>Flexible Integration to support diverse operational needs</li>
+      </ul>
+    `,
+   
+    datasheet: `
+      <p>Please click on the link below to download the full data sheet.
+       <br>
+        <a href="./img/LabPower/LabPower-RTL/LabPower-RTL.pdf" id="datalink" target="_blank">
+          Download LabPower-RTL
+        </a>
+      </p>
+    ` 
+            }
+          ]
+        }
+      ]
+    },
+    {
+      name: "LabAir",
+      productTitles: [
+        {
+          title: "LabAir-InRow O2 Cooling",
+          products: [
+            { 
+              name: "LabAir-InRow O2 Cooling", img: "./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (1).jpeg",
+                 images: [
+"./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (1).jpeg",
+"./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (2).jpeg",
+"./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (3).jpeg",
+"./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (4).jpeg",
+"./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (5).jpeg",
+"./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (6).jpeg",
+"./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (7).jpeg",
+"./img/LabAir/LabAir-InRow O2 Cooling/LabAir-InRow (8).jpeg"
+    ],
+              text: "In-Row Precision Air-Conditioner. High Efficiency and Energy Saving.",
+ 
+     description: `
+              <p>In-Row Precision Air-Conditioner. High Efficiency and Energy Saving.</p>
+
+    `,
+    
+    features: `
+      <ul>
+<li>High-Efficiency DC Inverter Compressor - Provides intelligent cooling capacity adjustment for optimal performance</li>
+<li>Stepless Speed Fan - Ensures smooth and efficient airflow management.</li>
+<li>High-Precision PID-Adjusted Water Valve (Chilled Water Type) - Delivers precise temperature control for enhanced cooling efficiency.</li>
+<li>Stepless Speed Scythe-Type Cooling Fan - Offers consistent and reliable cooling with seamless speed adjustments.</li>
+<li>Optimal Control Policy - Guarantees maximum energy-saving efficiency, reducing operational costs and environmental impact.</li>
+<li>Optimized Heat Exchanger and Air Duct Design - Uses Computational Fluid Dynamics (CFD) for high efficiency and low resistance in heat and mass transfer.</li>
+<li>Ultra-High Sensible Heat Ratio - Prevents energy loss due to repeated humidification and dehumidification cycles.</li>
+<li>High-Efficiency and Green Refrigerant R410A - Ensures environmentally friendly and efficient cooling.</li>
+<li>High-Precision Electronic Expansion Valve - Provides accurate refrigerant flow control for superior system performance.</li>
+      </ul>
+
+
+    `,
+    datasheet: `
+      <p>Please click on the link below to download the data sheet.
+       <br>
+        <a href="" id="datalink" target="_blank">
+          Download Data Sheet
+        </a>
+      </p>
+    `  
+            }
+          ]
+        },
+         {
+          title: "LabAir-InRoom O2 Cooling",
+          products: [
+            { 
+              name: "LabAir-InRoom O2 Cooling", img: "./img/LabAir/LabAir-InRoom O2 Cooling (2025)/LabAir-InRoom (1).jpeg",
+                 images: [
+"./img/LabAir/LabAir-InRoom O2 Cooling (2025)/LabAir-InRoom (1).jpeg",
+"./img/LabAir/LabAir-InRoom O2 Cooling (2025)/LabAir-InRoom (2).jpeg",
+"./img/LabAir/LabAir-InRoom O2 Cooling (2025)/LabAir-InRoom (3).jpeg",
+"./img/LabAir/LabAir-InRoom O2 Cooling (2025)/LabAir-InRoom (4).jpeg"
+    ],
+              text: "In-Room Precision Air-Conditioner. High Efficiency and Energy Saving",
+ 
+     description: `
+              <p>In-Room Precision Air-Conditioner. High Efficiency and Energy Saving.</p>
+
+    `,
+    
+    features: `
+      <ul>
+<li>Classified refrigeration system design, intelligent cooling capacity adjustment</li>
+<li>Stepless speed regulation EC fan (Optional underfloor design).</li>
+<li>High precision PID adjustment water valve (Chilled water type).</li>
+<li>High COP flexible scroll compressor.</li>
+<li>Stepless speed regulation scythe type condensing fan.</li>
+<li>Complete intelligent control system ensures dynamic optimization.</li>
+<li>Pleated G4 coarse filter with big surface area, large capacity and low resistance</li>
+<li>High-efficient and green refrigerant R410A.</li>
+<li>Varieties of extended energy-saving function:
+<br>
+1. Fluorine pump / Glycol free cooling function
+<br>
+2. Dual-cooling sources function
+<br>
+3. High-efficient DC inverter compressor
+<br>
+4. Use high-precision electronic expansion valve.</li>
+      </ul>
+
+
+    `,
+    datasheet: `
+      <p>Please click on the link below to download the data sheet.
+       <br>
+        <a href="" id="datalink" target="_blank">
+          Download Data Sheet
+        </a>
+      </p>
+    `  
             }
           ]
         }
@@ -2433,7 +3592,7 @@ China
 
   <!-- Copyright -->
   <div id="footer" class="text-left p-4" style="background-color: #1C2125;">
-        © 2025 Kabellab | Simple & Nice. All rights reserved.
+        © 2026 Kabellab | Simple & Nice. All rights reserved.
   </div>
   <!-- Copyright -->
 </footer>
