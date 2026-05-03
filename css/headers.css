@@ -12,9 +12,8 @@ body{
   src: url('./font/Kabellab.otf') format('opentype');
   /* Format should be 'opentype' for .otf files */
   font-weight: normal;
-  /* Define the weight for this font file */
   font-style: normal;
-  /* Define the style for this font file */
+
 }
 
 
@@ -64,13 +63,14 @@ body{
 
 
 #mainImage {
-  width: 300px;
+  width: 200px;
+  height: 230px;
   object-fit: contain;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 #mainImage:hover {
-  transform: scale(1.9);
+  transform: scale(2.8);
   cursor: pointer;
   z-index: 1000;
 }
@@ -104,7 +104,7 @@ body{
   user-select: none;
   opacity: 0.5;          /* default faded look */
   transition: transform 0.3s ease, opacity 0.3s ease;
-  border: 1px solid #8d8f91;  /* default border hidden */
+  border: 1px solid #8d8f91;  
   border-radius: 5px;
 }
 
@@ -122,8 +122,8 @@ body{
 }
 
   .link-divider a {
-    text-decoration: none; /* optional: remove underline */
-    color: #F1592A; /* bootstrap primary color */
+    text-decoration: none; 
+    color: #F1592A; 
     margin: 0 0.5rem;
     position: relative;
   }
@@ -175,11 +175,11 @@ color: #ffffff;
   transition: max-height 0.3s ease;
 }
 .search-wrapper.open {
-  max-height: 70px; /* Enough space for 1 input */
+  max-height: 70px; 
 }
 
 .navhover.active {
-  color: #F1592A !important; /* Bootstrap primary color */
+  color: #F1592A !important; 
   font-weight: 600;
 }
 
@@ -222,7 +222,7 @@ color: #ffffff;
 .card-hover:hover {
     transform: translateY(-5px); /* smooth lift */
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    border-color: #000; /* optional: change border color on hover */
+    border-color: #000; 
     border-radius: 0%;
 }
 
@@ -233,7 +233,7 @@ color: #ffffff;
 
 
 .card-link-wrapper:hover .card-hover {
-  border: 1px solid #F1592A !important; /* blue border */
+  border: 1px solid #F1592A !important; 
   border-radius: 8px;
   transform: translateY(-1px);
   box-shadow: 0 0 15px rgba(0, 118, 255, 0.15);
@@ -380,7 +380,7 @@ color: #ffffff;
   padding: 10px;
   width: 210px;      /* Set the width to your desired size */
   height: 200px;     /* Set the height to your desired size */
-  object-fit: cover; /* Ensures the image covers the area without distorting */
+  object-fit: contain; /* Ensures the image covers the area without distorting */
 }
 
 /* Default tab */
@@ -423,11 +423,11 @@ color: #ffffff;
 
 /* Active (current page) text */
 .breadcrumb .active {
-  color: #F1592A; /* red for current page */
+  color: #F1592A; /* for current page */
   font-weight: bold;
 }
 
 .breadcrumb a:hover {
-  color: #1C2125; /* red for current page */
+  color: #1C2125; /* for current page */
   font-weight: bold;
 }
