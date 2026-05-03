@@ -368,6 +368,9 @@ setTimeout(initThumbnails, 50);
  // -----------------------------
   // TAB DATA
   // -----------------------------
+
+const technicalData = selectedProduct?.technical || [];
+
 const tabData = [
   {
     tabLabel: "Product Description",
@@ -380,6 +383,30 @@ const tabData = [
     icon: "bi-list-check",
     title: "",
     text: selectedProduct?.features || "<p>No features listed.</p>"
+  },
+    {
+    tabLabel: "Technical Specifications",
+    icon: "bi-list-check",
+    title: "",
+    text: technicalData.length
+    ? technicalData.map(group => `
+        <div class="spec-section mb-4">
+          <table class="table table-bordered">
+            <tbody>
+              
+          <tr><th colspan="2">${group.section}</th></tr>
+              ${group.specs.map(spec => `
+                <tr>
+                  <th style="font-weight: normal; width: 300px;">${spec.label}</th>
+                  <td>${spec.value}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `).join('')
+    : "<p>No technical specifications listed.</p>"
+      
   },
   {
     tabLabel: "Data Sheet",
@@ -451,7 +478,6 @@ const tabData = [
       showContent(tab.dataset.index);
     });
   });
-
 
 
 </script>
@@ -556,7 +582,7 @@ China
 
   <!-- Copyright -->
   <div id="footer" class="text-left p-4" style="background-color: #1C2125;">
-        © 2025 Kabellab | Simple & Nice. All rights reserved.
+        © 2026 Kabellab | Simple & Nice. All rights reserved.
   </div>
   <!-- Copyright -->
 </footer>
